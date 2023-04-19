@@ -5,8 +5,10 @@ IR.IR_callbackUser(function (código) {
         maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 50)
     } else if (código == 19) {
         maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 25)
+        maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 0)
     } else if (código == 20) {
         maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 25)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 0)
     } else {
         maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 0)
     }
