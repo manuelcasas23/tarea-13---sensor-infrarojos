@@ -15,6 +15,8 @@ IR.IR_callbackUser(function (código) {
         maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 25)
     } else {
         maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CCW, 0)
+        maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
+        maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
     }
 })
 basic.forever(function () {
