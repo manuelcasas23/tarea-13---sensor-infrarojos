@@ -1,5 +1,5 @@
 {
-    "name": "tarea 13 - sensor infrarojos",
+    "name": "tarea 14 - sensor infrarojos IR + ULTRASONIDOS",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -8,7 +8,8 @@
         "maqueen": "github:dfrobot/pxt-maqueen#v1.7.2",
         "servo": "*",
         "MaqueenPlus": "github:dfrobot/pxt-dfrobot-maqueenplus#v1.5.1",
-        "smarthome-kit": "github:tinkertanker/pxt-smarthome#v2.2.1"
+        "smarthome-kit": "github:tinkertanker/pxt-smarthome#v2.2.1",
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.5"
     },
     "files": [
         "main.blocks",
@@ -25,5 +26,16 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_NO_MITM"
+                }
+            }
+        }
+    }
 }
